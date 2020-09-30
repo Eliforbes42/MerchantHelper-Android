@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="194dp"
+        android:layout_height="55dp"
+        android:layout_marginEnd="166dp"
+        android:layout_marginRight="166dp"
+        android:background="#ffffff"
+        android:ems="10"
+        android:hint="@string/edit_mesage"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:text="Location" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="194dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="76dp"
+        android:ems="10"
+        android:hint="@string/edit_message1"
+        android:inputType="textPersonName"
+        android:textColor="#000000"
+        android:background="#ffffff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/button1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="Animals" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="76dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginRight="56dp"
+        android:onClick="sendMessage"
+        android:text="@string/button_send"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/editText2"
+        tools:text="Search" />
+
+    <TextView
+        android:id="@+id/HelperTitle"
+        android:layout_width="206dp"
+        android:layout_height="62dp"
+        android:layout_marginEnd="154dp"
+        android:layout_marginRight="154dp"
+        android:text="Merchant Helper"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Merchant Helper" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="194dp"
+        android:layout_height="48dp"
+        android:text="Input your Location"
+        android:textColor="#000000"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="126dp"
+        tools:text="Input Locale" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="78dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="292dp"
+        android:adjustViewBounds="true"
+        android:background="#000000"
+        android:contentDescription="Chicken"
+        android:onClick="needChicken"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/chickenswodo" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginStart="4dp"
+        android:adjustViewBounds="true"
+        android:background="#000000"
+        android:onClick="needPig"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toEndOf="@+id/imageButton"
+        app:srcCompat="@drawable/pigswodo"
+        tools:layout_editor_absoluteY="292dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginStart="4dp"
+        android:adjustViewBounds="true"
+        android:background="#000000"
+        android:onClick="needSnek"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toEndOf="@+id/imageButton2"
+        app:srcCompat="@drawable/snakeswodo"
+        tools:layout_editor_absoluteY="292dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginStart="4dp"
+        android:adjustViewBounds="true"
+        android:background="#000000"
+        android:onClick="needGp"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toEndOf="@+id/imageButton3"
+        app:srcCompat="@drawable/gunpowderbarrel"
+        tools:layout_editor_absoluteY="292dp" />
+
+    <LinearLayout
+        android:layout_width="194dp"
+        android:layout_height="55dp"
+        android:layout_marginBottom="65dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/editText"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <Spinner
+            android:id="@+id/dynamic_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <!--<Spinner
+            android:id="@+id/static_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />-->
+
+
+        <!--<Spinner
+            android:id="@+id/spinner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:entries="@array/outpost_array" />-->
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>

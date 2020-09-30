@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">FinderApp</string>
+    <string name="edit_mesage">Ex. B15</string>
+    <string name="button_send">Send</string>
+    <string name="edit_message1">Enter an Id List</string>
+    <string-array name="outpost_array">
+        <item>Ancient Spire Outpost</item>
+        <item>Dagger Tooth Outpost</item>
+        <item>Galleon's Grave Outpost</item>
+        <item>Golden Sands Outpost</item>
+        <item>Plunder Outpost</item>
+        <item>Sanctuary Outpost</item>
+
+    </string-array>
+</resources>
